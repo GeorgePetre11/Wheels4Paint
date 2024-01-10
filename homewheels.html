@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels4Paint</title>
+    <style>
+        
+        .navbar {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .active {
+            background-color: #ffd900;
+            color: white;
+        }
+
+        
+        #gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .gallery-image {
+            width: 48%;
+        }
+        .gallery-image img {
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        
+        #description-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #description-box textarea {
+            width: 80%;
+            height: 100px;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #additional-picture {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #additional-picture img {
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+			background-color: #000000;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 18px;
+			font-family: Arial, sans-serif;
+		}
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="index.php">Order!</a>
+        <a href="login.php">Login page for Admin</a>
+    </div>
+
+
+    
+    <div id="description-box">
+        <h2>Welcome to Paint4Wheels - Your Ultimate Destination for Custom Wheel Painting!</h2>
+        <p>At Paint4Wheels, we bring your wheel customization dreams to life. Elevate the aesthetics of your vehicle by choosing from a vast array of colors that suit your style and personality. Whether you prefer the timeless elegance of standard colors or crave the exclusive flair of premium shades, we've got you covered.</p>
+        
+        <div id="gallery">
+            <div class="gallery-image">
+                <img src="image1.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-image">
+                <img src="image2.jpeg" alt="Image 2">
+            </div>
+        </div>
+
+
+        <h2>Why Choose Paint4Wheels?</h2>
+        <ul>
+            <li><strong>Endless Color Options:</strong> Explore an extensive palette of colors to find the perfect match for your wheels. From classic blacks and whites to vibrant reds, blues, and even luxurious metallic finishes, our selection ensures your wheels reflect your unique taste.</li>
+            <li><strong>Quality Craftsmanship:</strong> Our team of skilled professionals is dedicated to delivering top-notch craftsmanship. We take pride in using high-quality paints and finishes to ensure a durable and flawless result that stands the test of time.</li>
+            <li><strong>Customization Beyond Limits:</strong> Unleash your creativity! We not only offer standard colors but also provide premium options for those seeking an extra touch of sophistication. Your wheels, your choice – make a statement on the road with Paint4Wheels.</li>
+            <li><strong>Easy Process, Stunning Results:</strong> Our streamlined process ensures a hassle-free experience. Simply choose your color, drop off your wheels, and leave the rest to us. Before you know it, you'll be hitting the streets with a set of wheels that turn heads at every corner.</li>
+        </ul>
+
+        <h2>Get Started Today!</h2>
+        <p>Transform your vehicle into a work of art with Paint4Wheels. Whether you're looking to refresh the appearance of your current wheels or want a bold change, we're here to make it happen. Browse our gallery for inspiration, explore our color options, and envision the possibilities.
+
+        Your journey to personalized wheel perfection starts here at Paint4Wheels. Drive in style, drive with confidence – because your wheels deserve the best.</p>
+    </div>
+
+    <div id="additional-picture">
+        <img src="background.jpg" alt="Additional Image">
+    </div>
+
+    
+    <div class="footer">
+        <p>Wheels4Paint © 2024</p>
+    </div>
+</body>
+</html>

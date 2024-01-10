@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <style>
+        .navbar {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .active {
+            background-color: #ffd900;
+            color: white;
+        }
+
+        /* Product card */
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+            font-family: arial;
+        }
+        .product-card h1 {
+            font-size: 24px;
+            color: #000;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #000;
+        }
+
+        /* Product picture */
+        .product-pic {
+            background-size: cover;
+            height: 200px;
+            width: 100%;
+        }
+
+        /* Product colors */
+        .product-colors {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .product-colors span {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 2px solid #000;
+        }
+        .product-colors span.active {
+            border-color: #7ed6df;
+        }
+        .blue {
+            background-color: #7ed6df;
+        }
+        .green {
+            background-color: #badc58;
+        }
+        .yellow {
+            background-color: #f9ca24;
+        }
+        .rose {
+            background-color: #ff7979;
+        }
+
+        /* Product info */
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 22px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .product-button {
+            background-color: #7ed6df;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .product-button:hover {
+            background-color: #6ab1c3;
+        }
+
+        /* Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+		.footer {
+			background-color: #000000;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 18px;
+			font-family: Arial, sans-serif;
+		}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="homewheels.html">Home</a>
+        <a class="active" href="#">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="index.php">Order!</a>
+        <a href="login.php">Login page for Admin</a>
+    </div>
+
+    <!-- Body 1: Standard Colors -->
+    <div class="product-grid">
+        <div class="product-card">
+            <h1>Product 1</h1>
+            <p>Matte Black</p>
+            <div class="product-pic" style="background-image: url('negru_matwheel.jpeg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 2</h1>
+            <p>Piano Black </p>
+            <div class="product-pic" style="background-image: url('pianoblackwheel.jpeg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 3</h1>
+            <p>Titan</p>
+            <div class="product-pic" style="background-image: url('titan.jpg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 4</h1>
+            <p>Matte Carbon</p>
+            <div class="product-pic" style="background-image: url('carbonmat.jpeg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body 2: Premium Colors -->
+    <div class="product-grid">
+        <div class="product-card">
+            <h1>Product 5</h1>
+            <p>Orange Wheel</p>
+            <div class="product-pic" style="background-image: url('orangewheel.jpg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 6</h1>
+            <p>Pink Wheel</p>
+            <div class="product-pic" style="background-image: url('pinkwheel.jpg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 7</h1>
+            <p>Light Blue</p>
+            <div class="product-pic" style="background-image: url('image2.jpeg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h1>Product 8</h1>
+            <p>Dark Green</p>
+            <div class="product-pic" style="background-image: url('image1.jpeg');"></div>
+            <div class="product-info">
+                <div class="product-price">$90</div>
+            </div>
+        </div>
+
+    </div>
+
+	<div id="prices-box">
+        <p>Price is for all the 4 wheels. It also includes their installation. </p>
+	
+	<div class="footer">
+		<p>Wheels4Paint © 2024</p>
+	</div>
+</body>
+</html>
